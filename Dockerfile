@@ -16,7 +16,7 @@ COPY . .
 RUN make tools deps build
 
 # Final image
-FROM alpine
+FROM alpine:3.17.3
 
 # Install ca-certificates
 RUN apk add --update ca-certificates
